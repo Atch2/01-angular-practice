@@ -1,0 +1,23 @@
+<div>
+  <h2>CURSO: {{nameCourse}} </h2>
+  <hr>
+  <div>
+    <h3>Nombre Curso: {{nameCourse}}</h3>
+  </div>
+  <div>
+    <table>
+      <thead>
+        <th>ID</th>
+        <th>CEDULA</th>
+        <th>NOMBRE</th>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td> {{student.id}} </td>
+          <td> {{student.identification}} </td>
+          <td> {{student.name}} - {{student.surname}} </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
